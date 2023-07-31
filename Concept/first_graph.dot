@@ -5,6 +5,7 @@ digraph G {
 "Room" [shape="box"]
 "Chairs" [shape="box"]
 "Author Lists" [shape="box"]
+"Equipment List" [shape="box"]
 "Talks" -> "Presentation ID" [label="Talk ID"]
 "Talks" -> "Time interval" [label="Speaking time"]
 "Talks" -> "Time interval" [label="Question time"]
@@ -22,8 +23,6 @@ digraph G {
 "Posters" -> "Date and time"
 "Posters" -> "Title"
 "Posters" -> "Abstract"
-"Room" -> "has screen"
-"Room" -> "has microphone"
-"Room" -> "has remote"
-"Room" -> "has whiteboard"
+"Equipment List" -> "Equipment Type" [label="has equipment"]
+"Equipment List" -> "Room" [label="is in room"]
 }
