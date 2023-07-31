@@ -4,20 +4,24 @@ digraph G {
 "Posters" [shape="box"]
 "Room" [shape="box"]
 "Chairs" [shape="box"]
+"Author Lists" [shape="box"]
 "Talks" -> "Presentation ID"
-"Talks" -> "Authors"
 "Talks" -> "Speaking time"
 "Talks" -> "Question time"
 "Talks" -> "Total time"
 "Talks" -> "Title"
 "Talks" -> "Abstract"
+"Author Lists" -> "Authors"
 "Authors" -> "First name"
 "Authors" -> "Last name"
 "Authors" -> "email"
+"Author Lists" -> "Presentation ID"
 "Chairs" -> "Authors"
-"Posters" -> "Authors"
+"Posters" -> "Presentation ID"
 "Posters" -> "Board No"
 "Posters" -> "Date and time"
+"Posters" -> "Title"
+"Posters" -> "Abstract"
 "Room" -> "has screen"
 "Room" -> "has microphone"
 "Room" -> "has remote"
