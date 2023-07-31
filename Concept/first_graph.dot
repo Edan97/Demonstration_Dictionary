@@ -1,0 +1,25 @@
+digraph G {
+"Talks" [shape="box"]
+"Authors" [shape="box"]
+"Posters" [shape="box"]
+"Room" [shape="box"]
+"Chairs" [shape="box"]
+"Talks" -> "Presentation ID"
+"Talks" -> "Authors"
+"Talks" -> "Speaking time"
+"Talks" -> "Question time"
+"Talks" -> "Total time"
+"Talks" -> "Title"
+"Talks" -> "Abstract"
+"Authors" -> "First name"
+"Authors" -> "Last name"
+"Authors" -> "email"
+"Chairs" -> "Authors"
+"Posters" -> "Authors"
+"Posters" -> "Board No"
+"Posters" -> "Date and time"
+"Room" -> "has screen"
+"Room" -> "has microphone"
+"Room" -> "has remote"
+"Room" -> "has whiteboard"
+}
