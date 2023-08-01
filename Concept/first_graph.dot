@@ -1,4 +1,5 @@
 digraph G {
+"Presentations" [shape="box"]
 "Talks" [shape="box"]
 "Authors" [shape="box"]
 "Posters" [shape="box"]
@@ -6,23 +7,22 @@ digraph G {
 "Chairs" [shape="box"]
 "Author Lists" [shape="box"]
 "Equipment List" [shape="box"]
-"Talks" -> "Presentation ID" [label="Talk ID"]
+"Presentations" -> "Title"
+"Presentations" -> "Abstract"
+"Presentations" -> "Presentation ID"
+"Talks" -> "Presentations" [label="Talk ID"]
 "Talks" -> "Time interval" [label="Speaking time"]
 "Talks" -> "Time interval" [label="Question time"]
 "Talks" -> "Time interval" [label="Total time"]
-"Talks" -> "Title" [label="Talk title"]
-"Talks" -> "Abstract" [label="Talk abstract"]
 "Author Lists" -> "Authors" [label="an author"]
 "Authors" -> "First name"
 "Authors" -> "Last name"
 "Authors" -> "email"
 "Author Lists" -> "Presentation ID" [label="is author of"]
 "Chairs" -> "Authors" [label="Chair name"]
-"Posters" -> "Presentation ID" [label="Poster ID"]
+"Posters" -> "Presentations" [label="Poster ID"]
 "Posters" -> "Board No"
 "Posters" -> "Date and time"
-"Posters" -> "Title"
-"Posters" -> "Abstract"
 "Equipment List" -> "Equipment Type" [label="has equipment"]
 "Equipment List" -> "Room" [label="is in room"]
 }
