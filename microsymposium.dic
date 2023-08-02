@@ -1,0 +1,242 @@
+#\#CIF_2.0
+##################################################################
+#                                                                #
+#                Demonstration dictionary                        #
+#                                                                #
+##################################################################
+
+data_MICROSYMPOSIUM_DIC
+
+    _dictionary.title             Microsymposium_Dic
+    _dictionary.class             Reference
+    _dictionary.version           0.1.0
+    _dictionary.date              2023-08-02
+    _dictionary.ddl_conformance   4.2.0
+    _dictionary.namespace         CifCore
+    _description.text
+;
+    A dictionary for storing information about microsymposia.
+;
+
+save_MICROSY
+
+    _definition.id                MICROSY
+    _definition.scope             Category
+    _definition.class             Head
+    _description.text
+;
+    Topmost category for the Microsymposium_Dic dictionary
+;
+    _name.category_id             MICROSYMPOSIUM_DIC
+    _name.object_id               MICROSY
+
+save_
+
+save_AUTHOR_LIST
+
+    _definition.id                AUTHOR_LIST
+    _definition.scope             Category
+    _definition.class             Loop
+    _definition.update            2023-08-02
+    _description.text
+;
+    A category associating authors with presentations
+;
+    _name.category_id             MICROSY
+    _name.object_id               AUTHOR_LIST
+
+    loop_
+      _category_key.name
+         '_author_list.author_id'
+         '_author_list.presentation_id'
+
+save_
+
+save_author_list.author_id
+
+    _definition.id                '_author_list.author_id'
+    _definition.update            2023-08-02
+    _description.text
+;
+    Identifier of the author belonging to the presentation
+;
+    _name.category_id             author_list
+    _name.object_id               author_id
+    _name.linked_item_id          author.id
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_author_list.presentation_id
+
+    _definition.id                '_author_list.presentation_id'
+    _definition.update            2023-08-02
+    _description.text
+;
+    Identifier of the presentation that the author is a part of
+;
+    _name.category_id             author_list
+    _name.object_id               presentation_id
+    _name.linked_item_id          presentation.id
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_PRESENTATION
+
+    _definition.id                PRESENTATION
+    _definition.scope             Category
+    _definition.class             Loop
+    _definition.update            2023-08-02
+    _description.text
+;
+    Category holding information about presentations
+;
+    _name.category_id             MICROSY
+    _name.object_id               PRESENTATION
+    _category_key.name            '_presentation.id'
+
+save_
+
+save_presentation.abstract
+
+    _definition.id                '_presentation.abstract'
+    _definition.update            2023-08-02
+    _description.text
+;
+    Abstract for presentation
+;
+    _name.category_id             presentation
+    _name.object_id               abstract
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_presentation.id
+
+    _definition.id                '_presentation.id'
+    _definition.update            2023-08-02
+    _description.text
+;
+    A unique identifier for the presentation
+;
+    _name.category_id             presentation
+    _name.object_id               id
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_presentation.title
+
+    _definition.id                '_presentation.title'
+    _definition.update            2023-08-02
+    _description.text
+;
+    Title of presentation
+;
+    _name.category_id             presentation
+    _name.object_id               title
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_TALK
+
+    _definition.id                TALK
+    _definition.scope             Category
+    _definition.class             Loop
+    _definition.update            2023-08-02
+    _description.text
+;
+    Information about oral presentations
+;
+    _name.category_id             MICROSY
+    _name.object_id               TALK
+    _category_key.name            '_talk.presentation_id'
+
+save_
+
+save_talk.presentation_id
+
+    _definition.id                '_talk.presentation_id'
+    _definition.update            2023-08-02
+    _description.text
+;
+    The unique identifier for the presentation
+;
+    _name.category_id             talk
+    _name.object_id               presentation_id
+    _name.linked_item_id          presentation.id
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_talk.question_time
+
+    _definition.id                '_talk.question_time'
+    _definition.update            2023-08-02
+    _description.text
+;
+    Scheduled length of question time for presentation
+;
+    _name.category_id             talk
+    _name.object_id               question_time
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_talk.speaking_time
+
+    _definition.id                '_talk.speaking_time'
+    _definition.update            2023-08-02
+    _description.text
+;
+    Scheduled length of presentation
+;
+    _name.category_id             talk
+    _name.object_id               speaking_time
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_talk.total_time
+
+    _definition.id                '_talk.total_time'
+    _definition.update            2023-08-02
+    _description.text
+;
+    Total scheduled time for presentation, consisting of speaking time and
+    question time
+;
+    _name.category_id             talk
+    _name.object_id               total_time
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
