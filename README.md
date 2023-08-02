@@ -11,4 +11,5 @@ conference. The initial list of concepts is fleshed out in `initial_list.md`, wh
 into a graph, described in `first_graph.dot` and visualised in `first_graph.svg`. The various
 categories and data names are then listed out in a shorthand way (to save typing those long attribute
 names) in `detailed.md` before being converted to the dictionary `microsymposium.dic` using the
-shorthand-to-dictionary tool in `Tools/abbrev_to_dic.jl`.
+shorthand-to-dictionary tool in `Tools/abbrev_to_dic.jl`. Note that not all categories in the graph
+have been carried across to the dictionary; that remains an exercise for the reader.
