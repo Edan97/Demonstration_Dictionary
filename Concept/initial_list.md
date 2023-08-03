@@ -2,18 +2,62 @@
 
 A microsymposium
 
-# Words associated with the topic
+## No expansion required
 
-A microsymposium has...
+MS title
+MS number
+MS location
+MS date
+MS start time
+Room seating capacity
 
-A title
-An MS number
+## Recursively expand each heading: plurals
 
-Talks
-A location
-Equipment
-A date and beginning time
-A seating capacity
-Organisers/chairs
-A Technical contact
-Posters
+### Talk
+
+A talk is associated with
+
+Presentation ID
+authors
+speaking time
+question time
+total time
+title
+abstract
+
+### Author
+
+Author ID
+First name
+Last name
+email
+etc.
+
+### Organiser
+
+First name
+Last name
+email
+etc.
+
+### Poster
+
+Authors
+title
+abstract
+number
+date
+location
+
+### Equipment
+
+Has screen
+Has microphone
+Has remote capability
+Has whiteboard
+
+## Non plural headings needing expansion
+
+### Technical contact
+
+Same info as author.
