@@ -4,6 +4,14 @@ digraph G {
 "Posters" [shape="box"]
 "Room" [shape="box"]
 "Chairs" [shape="box"]
+"Microsymposium" [shape="box"]
+"Microsymposium" -> "MS Title"
+"Microsymposium" -> "MS ID"
+"Microsymposium" -> "Date"
+"Microsymposium" -> "Start time"
+"Microsymposium" -> "Room"
+"Microsymposium" -> "Talks"
+"Microsymposium" -> "Posters"
 "Talks" -> "Presentation ID"
 "Talks" -> "Authors"
 "Talks" -> "Speaking time"
@@ -22,4 +30,6 @@ digraph G {
 "Room" -> "has microphone"
 "Room" -> "has remote"
 "Room" -> "has whiteboard"
+"Room" -> "seating capacity"
+"Room" -> "Number"
 }
