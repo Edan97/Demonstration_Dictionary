@@ -6,6 +6,9 @@ A microsymposium
 
 A microsymposium has...
 
+A title
+An MS number
+
 Talks
 A location
 Equipment
