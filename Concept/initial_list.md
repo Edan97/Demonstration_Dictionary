@@ -2,6 +2,15 @@
 
 A microsymposium
 
+## No expansion required
+
+MS title
+MS number
+MS location
+MS date
+MS start time
+Room seating capacity
+
 ## Recursively expand each heading: plurals
 
 ### Talk
@@ -52,4 +61,3 @@ Has whiteboard
 ### Technical contact
 
 Same info as author.
-

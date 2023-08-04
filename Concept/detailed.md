@@ -9,6 +9,22 @@
 #X Microsymposium_Dic
 #Z A dictionary for storing information about microsymposia.
 
+#C Microsymposium
+#T Information about a particular microsymposium
+#S
+
+#D id
+#T An identifier for this microsymposium.
+
+#D title
+#T The microsymposium title
+
+#D date
+#T The date on which the microsymposium is held
+
+#D time
+#T The starting time for the microsymposium
+
 #C presentation
 #T Category holding information about presentations
 #K id

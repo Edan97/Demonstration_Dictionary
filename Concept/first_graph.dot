@@ -5,11 +5,18 @@ digraph G {
 "Posters" [shape="box"]
 "Room" [shape="box"]
 "Chairs" [shape="box"]
+"Microsymposium" [shape="box"]
 "Author Lists" [shape="box"]
 "Equipment List" [shape="box"]
+"Microsymposium" -> "MS Title"
+"Microsymposium" -> "MS ID"
+"Microsymposium" -> "Date"
+"Microsymposium" -> "Start time"
+"Microsymposium" -> "Room"
 "Presentations" -> "Title"
 "Presentations" -> "Abstract"
 "Presentations" -> "Presentation ID"
+"Presentations" -> "Microsymposium"
 "Talks" -> "Presentations" [label="Talk ID"]
 "Talks" -> "Time interval" [label="Speaking time"]
 "Talks" -> "Time interval" [label="Question time"]
@@ -20,9 +27,12 @@ digraph G {
 "Authors" -> "email"
 "Author Lists" -> "Presentation ID" [label="is author of"]
 "Chairs" -> "Authors" [label="Chair name"]
+"Chairs" -> "Microsymposium" [label="Chair name"]
 "Posters" -> "Presentations" [label="Poster ID"]
 "Posters" -> "Board No"
 "Posters" -> "Date and time"
+"Room" -> "seating capacity"
+"Room" -> "Number"
 "Equipment List" -> "Equipment Type" [label="has equipment"]
 "Equipment List" -> "Room" [label="is in room"]
 }
