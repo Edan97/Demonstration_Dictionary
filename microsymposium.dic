@@ -36,8 +36,8 @@ save_AUTHOR_LIST
 
     _definition.id                AUTHOR_LIST
     _definition.scope             Category
-    _definition.class             Set
     _definition.update            2023-08-03
+    _definition.class             Loop
     _description.text
 ;
     A category associating authors with presentations
@@ -175,8 +175,8 @@ save_PRESENTATION
 
     _definition.id                PRESENTATION
     _definition.scope             Category
-    _definition.class             Set
     _definition.update            2023-08-03
+    _definition.class             Loop
     _description.text
 ;
     Category holding information about presentations
@@ -242,7 +242,7 @@ save_TALK
 
     _definition.id                TALK
     _definition.scope             Category
-    _definition.class             Set
+    _definition.class             Loop
     _definition.update            2023-08-03
     _description.text
 ;
