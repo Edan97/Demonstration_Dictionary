@@ -80,7 +80,7 @@ save_author_list.presentation_id
 ;
     _name.category_id             author_list
     _name.object_id               presentation_id
-    _name.linked_item_id          presentation.id
+    _name.linked_item_id          '_presentation.id'
     _type.purpose                 Describe
     _type.source                  Assigned
     _type.container               Single
@@ -264,7 +264,7 @@ save_talk.presentation_id
 ;
     _name.category_id             talk
     _name.object_id               presentation_id
-    _name.linked_item_id          presentation.id
+    _name.linked_item_id          '_presentation.id'
     _type.purpose                 Describe
     _type.source                  Assigned
     _type.container               Single
